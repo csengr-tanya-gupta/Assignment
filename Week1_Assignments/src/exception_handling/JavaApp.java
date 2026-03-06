@@ -38,6 +38,15 @@ public class JavaApp {
 			throwable.printStackTrace();
 			System.out.println("Exception Handled");
 		}
+		
+		Student student = new Student(1, "raja", "raja@gmail.com", 789654123);
+		try {
+			DB.verifier(null);
+		}
+		catch(Throwable throwable) {
+			throwable.printStackTrace();
+			System.out.println("student object not found. Please pass Proper Object!");
+		}
 	}
 
 }
